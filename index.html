@@ -3,50 +3,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
-
 <body>
     <div class="container">
-        <h2>Blackjack</h2>
-        <h3><span id="blackjack-result">Let's Play</span></h3>
-        
-        <div class="flex-blackjack-row-1">
-            <div id="your-box">
-                <h2>You: <span id="your-blackjack-result">0</span></h2>
+        <header>
+            <nav class="nav-wrapper blue">
+                <div class="container">
+                <a href="" class="brand-logo">Blackjack</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                        <li>
+                          <a target="_blank" href="https://www.youtube.com/channel/UCXNBXevmh77KJHNyuY3LQgA?sub_confirmation=1" class="btn-floating btn-small blue darken-4 tooltip" data-tooltip="Youtube">
+                            <i class="fab fa-youtube"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://twitter.com/AryamaanG" class="btn-floating btn-small blue darken-4 tooltip" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://instagram.com/aryamaan27" class="btn-floating btn-small blue darken-4 tooltip" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="sidenav grey lighten-2" id="mobile-menu">
+                            <li>
+                              <a target="_blank" href="https://www.youtube.com/channel/UCXNBXevmh77KJHNyuY3LQgA?sub_confirmation=1">
+                                YouTube
+                              </a>
+                            </li>
+                            <li>
+                              <a target="_blank" href="https://twitter.com/AryamaanG">
+                                Twitter
+                              </a>
+                            </li>
+                            <li>
+                              <a target="_blank" href="https://instagram.com/aryamaan27">
+                                Instagram
+                              </a>
+                            </li>
+                      </ul>
+                </div>
+            </nav>
+        </header>
+        <h2>Blackjack Project</h2>
+        <div class="container">
+            <h3>What is Blackjack?</h3>
+            <div class="container">
+                <p>Blackjack is the American version of a popular global banking game known as Twenty-One, whose relatives include Pontoon and Vingt-et-Un. It is a comparing card game between one or more players and a dealer, where each player in turn competes against the dealer. Players do not compete against each other.</p>
+                <a href="https://en.wikipedia.org/wiki/Blackjack" target="_blank"><button class="btn-large blue">View on Wikipedia</button></a>
             </div>
-            <div id="dealer-box">
-                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            <h3>Who am I?</h3>
+            <div class="container">
+                <p>Hello! I am Aryamaan Goswamy. I'm a 12 year old Python developer. I'm learning JavaScript for web development and my projects can be found at aryamaan-js.org/ followed by the project name.</p>
+                <a href="https://github.com/aryamaan-js" target="_blank"><button class="btn-large blue">View me on GitHub</button></a>
             </div>
-        </div>
-
-        <div class="flex-blackjack-row-2">
-            <div>
-                <button class="btn-lg btn-primary mr-2" id="hit">Hit</button>
-                <button class="btn-lg btn-warning mr-2" id="stand">Stand</button>
-                <button class="btn-lg btn-danger" id="deal">Deal</button>
+            <h3>Who to thank?</h3>
+            <div class="container">
+                <p>I took Clever Programmer's 8 hour JavaScript course, and The Net Ninja's Materialize course. Subscibing to both is free!</p>
+                <div style="padding: 20px;">
+                    <div style="padding: 20px;">
+                        <a href="https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ"><button class="btn-large blue">subscribe to clever programmer</button></a>
+                    </div>
+                    <div style="padding: 20px;">
+                        <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"><button class="btn-large blue">subscribe to the net ninja</button></a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="flex-blackjack-row-3">
-            <table>
-                <tr>
-                    <th>Wins</th>
-                    <th>Draws</th>
-                    <th>Losses</th>
-                </tr>
-
-                <tr>
-                    <td><span id="wins">0</span></td>
-                    <td><span id="draws">0</span></td>
-                    <td><span id="losses">0</span></td>
-                </tr>
-            </table>
-        </div>
+            <div style="padding: 20px;">
+            <a href="blackjack.html" target="_blank"><button class="btn-large blue">Play Blackjack!</button></a>
+            </div>
+        </div> 
     </div>
-
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltip').tooltip();
+        });
+    </script>
 </body>
- 
+</html>
